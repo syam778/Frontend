@@ -1,0 +1,86 @@
+.appdownload-platfrom{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+}
+.download{
+    margin-top: 20px;
+    gap: 30px;
+    min-height: min-content;
+}
+.down{
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+
+}
+.down p{
+    color: grey;
+    margin-left: 30px;
+}
+.appdownload-platfrom img{
+    border-radius: 39px;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 10px blue;
+    width: 230px;
+    height: 100px;
+    cursor: pointer;
+
+}
+.appdownload-platfrom img:hover{
+    border-radius: 45px;
+    border: 1px solid palevioletred;
+    box-shadow: 0px 0px 10px palevioletred;
+    width: 200px;
+    height: 80px;
+
+}
+    @media (max-width:375px){
+        .appdownload-platfrom{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.download{
+    margin-top: 10px;
+    gap: 10px;
+    min-height: min-content;
+}
+.down{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+.down p{
+    color: white;
+    margin-left: 1px;
+    font-size: 1px;
+}
+.appdownload-platfrom img{
+    border-radius: 39px;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 10px blue;
+    width: 115px;
+    height: 50px;
+    cursor: pointer;
+
+}
+.appdownload-platfrom img:hover{
+    border-radius: 45px;
+    border: 1px solid palevioletred;
+    box-shadow: 0px 0px 10px palevioletred;
+    width: 100px;
+    height: 50px;
+
+}
+
+    }

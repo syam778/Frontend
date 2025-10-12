@@ -1,0 +1,154 @@
+.login{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: grid;
+}
+.login-cont{
+    place-self: center;
+    width: max-content;
+    color: bisque;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 3s;
+    
+}
+.login-cont .titel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-left: -0px;
+
+    
+
+}
+.login-input input{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 60px;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px blue;   
+}
+.login-input{
+    margin-top: -20px;
+}
+.titel img{
+    width: 40px;
+    height: 40px;
+}
+.login-cont button{
+    padding: 10px 12px;
+    background-color: tomato;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+.login-cont p{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+ span{
+    color: tomato;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 3px 6px;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+@media (max-width:375px){
+    .login{
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    height: 60%;
+    background-color: transparent;
+    display: grid;
+    margin: 10px;
+}
+.login-cont{
+    place-self: center;
+    width: max-content;
+    color: bisque;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 25px;
+    border-radius: 18px;
+    font-size: 14px;
+    animation: fadeIn 3s;
+    
+}
+.titel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+
+}
+.login-input input{
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 35px;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px blue;   
+}
+.login-input{
+    margin-top: -20px;
+}
+.titel img{
+    width: 40px;
+    height: 40px;
+}
+.login-cont button{
+    padding: 8px 8px;
+    margin-left: -10px;
+    background-color: tomato;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+.login-cont p{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+ span{
+    color: tomato;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 3px 6px;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+
+}
