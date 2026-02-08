@@ -36,8 +36,26 @@ import lin from './lin.png'
 import x from './x.png'
 import youtube from './youtube.png'
 import fb from './fb.png'
+import vegetable from './vegetable.png'
+import vegetable1 from './vegetable1.png'
+import oil from './oil.png'
+import nonveg from './nonveg.png'
+import grocery from './grocery.png'
+import cold from './cold.png'
+import colddrink from './colddrink.png'
+import food from './food.png'
+import icecream from './icecream.png'
+import offers from './offers.png'
+import lassi from './lassi.png'
+import kulfi from './kulfi.png'
+import bags from './bags.png'
+import garments from './garments.png'
+import sports from './sports.png'
+import lmarker from './lmarker.png'
+import download from './download.png'
 
 
+//export const maps = "https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
 export const photo ={
     home,
     bike,
@@ -72,53 +90,93 @@ export const photo ={
     store,
     whatshapp,
     playstore,
-    app,
-    x,fb,lin,youtube
+    app,lmarker,
+    x,fb,lin,youtube,download,
+    vegetable,vegetable1,oil,nonveg,grocery,cold,colddrink,food,icecream,offers,lassi,kulfi,bags,garments,sports
 
 
 }
 export const menu_list =[
     {
-        menu_name : "Butter",
-        menu_image : amul_butter,
+        menu_name : "Vegetable",
+        menu_image : vegetable1,
+        
+        
         
     },
     {
-        menu_name : "Milk",
+        menu_name : "MilkProduct",
         menu_image : amul_goldmilk,
         
+        
+        
     },
     {
-        menu_name : "Panner",
-        menu_image : amul_paneer
+        menu_name : "Oil",
+        menu_image : oil,
+        
+    },
+    
+    {
+        menu_name : "NonVeg",
+        menu_image : nonveg,
+        
+    },
+
+    {
+        menu_name : "GroceryItems",
+        menu_image : grocery,
+  
+    },
+    {
+        menu_name : "FreshProduct",
+        menu_image : vegetable,
+        
+    },
+    {
+        menu_name : "ColdDrinks",
+        menu_image : cold,
+        
+    },
+    {
+        menu_name : "FoodItems",
+        menu_image : food,
+        
     },
     {
         menu_name : "IceCream",
-        menu_image : ice_cream
+        menu_image : icecream,
+        
     },
     {
-        menu_name : "Feta-Cheese",
-        menu_image : amul_feta
+        menu_name : "Offers",
+        menu_image : offers,
+        
     },
     {
-        menu_name : "Cows-Milk",
-        menu_image : amul_milk_cow
+        menu_name : "Lassi",
+        menu_image : lassi,
+        
     },
     {
-        menu_name : "Buffalo-Milk",
-        menu_image : amul_buffalomilk
+        menu_name : "Kulfi",
+        menu_image : kulfi,
+        
     },
     {
-        menu_name : "Mozzarella",
-        menu_image : amul_mozzarella
+        menu_name : "Bags",
+        menu_image : bags,
+        
     },
     {
-        menu_name : "Slice-Cheese",
-        menu_image : cheese_slice
+        menu_name : "GarmentsItems",
+        menu_image : garments,
+        
     },
     {
-        menu_name : "Cream-Cheese",
-        menu_image : cream_cheese
+        menu_name : "SportsProduct",
+        menu_image : sports,
+        
     },
     
 ]
@@ -126,107 +184,172 @@ export const menu_list =[
 export const food_list =[
     {
         _id:1,
-        name:"Milk",
+        name:"MilkProduct",
         image:amul_goldmilk,
         price:12,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Milk"
+        category:"MilkProduct",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
     },
     {
         _id:2,
-        name:"Panner",
-        image: amul_paneer,
+        name:"Vegetable",
+        image: vegetable1,
         price:122,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Panner"
+        category:"Vegetable",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
     },
     {
         _id:3,
-        name:"Butter",
-        image:amul_butter,
+        name:"Oil",
+        image:oil,
         price:16,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Butter"
+        category:"Oil",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
 
     },
     {
         _id:4,
-        name:"Cheese-Feta",
-        image: amul_feta,
+        name:"NonVeg",
+        image: nonveg,
         price:12,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Cheese-Feta"
+        category:"NonVeg",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
     },
     {
         _id:5,
-        name:"Buffalo-Milk",
-        image: amul_buffalomilk,
+        name:"GroceryItems",
+        image: grocery,
         price:12,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Buffalo-Milk"
+        category:"GroceryItems",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
         
     },
     {
         _id:6,
-        name:"Butter-Milk",
-        image: amul_buttermilk,
+        name:"FreshProduct",
+        image: vegetable,
         price:12,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Butter-Milk"
+        category:"FreshProduct",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
 
         
     },
     {
         _id:7,
-        name:"Mozzarella",
-        image: amul_mozzarella,
+        name:"ColdDrinks",
+        image: colddrink,
         price:121,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Mozzarella"
-        
+        category:"ColdDrinks",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
     },
     {
         _id:8,
-        name:"Cheese-Slice",
-        image: cheese_slice,
+        name:"FoodItems",
+        image: food,
         price:40,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Cheese-Slice"
+        category:"FoodItems",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
     },
     {
         _id:9,
-        name:"Cream-Cheese",
-        image: cream_cheese,
+        name:"IceCream",
+        image: icecream,
         price:12,
         reting_image: reting,
         description:"food is very good and test",
-        category:"Cream-Cheese"
+        category:"IceCream",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
     },
     {
         _id:10,
-        name:"Ice-Cream",
-        image: ice_cream,
+        name:"Offers",
+        image: offers,
         price:50,
         reting_image: reting,
         description:"food is very good and test",
-        category:"IceCream"
+        category:"Offers",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
         
     },
+    {
+        _id:11,
+        name:"Lassi",
+        image: lassi,
+        price:50,
+        reting_image: reting,
+        description:"food is very good and test",
+        category:"Lassi",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+        
+    },
+    {
+        _id:12,
+        name:"Kulfi",
+        image: kulfi,
+        price:50,
+        reting_image: reting,
+        description:"food is very good and test",
+        category:"Kulfi",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+        
+    },
+    {
+        _id:13,
+        name:"Bags",
+        image: bags,
+        price:50,
+        reting_image: reting,
+        description:"food is very good and test",
+        category:"Bags",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+        
+    },
+    {
+        _id:14,
+        name:"GarmentsItems",
+        image: garments,
+        price:50,
+        reting_image: reting,
+        description:"food is very good and test",
+        category:"GarmentsItems",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+        
+    },
+    {
+        _id:15,
+        name:"SportsProduct",
+        image: sports,
+        price:50,
+        reting_image: reting,
+        description:"food is very good and test",
+        category:"SportsProduct",
+        map:"https://www.google.com/maps/place/Surada,+Odisha+761108/@19.7579794,84.4215201,15z/data=!3m1!4b1!4m6!3m5!1s0x3a22c4acfa0aa381:0x48847d0026b3d954!8m2!3d19.7577068!4d84.4343341!16zL20vMGY2Y3lq?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+        
+    },
+    
     
 
 ]

@@ -6,35 +6,49 @@ import { createContext, useEffect, useState } from "react";
 //import { await } from "react-router-dom";
 import axios from 'axios'
 
+
 export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({})
     const url = "http://localhost:3000"
+    //const url = "https://back-ylnd.onrender.com" 
+    //const url = "https://backend3-nt7k.onrender.com"
     const [token, setToken] = useState("")
     const [food_list, setFoodList] = useState([])
     const [query, setQuery] = useState('')
+    let wonAudio = new Audio('/Audios/done.mp3');
+    let doneAudio = new Audio('/Audios/error.mp3');
+    let submitAudio = new Audio('/Audios/submit2.mp3');
+    const upiId = "beherasyam28-2@oksbi";
+    let addAudio = new Audio('/Audios/add.mp3');
+    let timeAudio = new Audio('/Audios/ontime.mp3');
 
     
- 
-      
 
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
             setCartItems((prev) => ({ ...prev, [itemId]: 1 }))
+            addAudio.play()
         }
         else {
             setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
+            addAudio.play()
+            
         }
         if (token) {
             await axios.post(url + "/api/card/add", { itemId }, { headers: { token } })
+            addAudio.play()
+
         }
     }
     const removeFromCart = async (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+        doneAudio.play();
         if (token) {
             await axios.post(url + "/api/card/remove", { itemId }, { headers: { token } })
+            doneAudio.play();
         }
     }
 
@@ -54,6 +68,7 @@ const StoreContextProvider = (props) => {
 }
 
         
+        
     
 
     const fetchFoodList = async () => {
@@ -65,6 +80,9 @@ const StoreContextProvider = (props) => {
         setCartItems(response.data.cardData)
 
     }
+    
+    
+    
 
 
 
@@ -84,7 +102,7 @@ const StoreContextProvider = (props) => {
 
 
     const contextValue = {
-        food_list, cartItems, setCartItems, addToCart, removeFromCart, getTotalAmount, url, token, setToken, query, setQuery
+        food_list,upiId,cartItems, setCartItems, addToCart, removeFromCart, getTotalAmount, url, token, setToken, query, setQuery,doneAudio,submitAudio,wonAudio,addAudio,timeAudio,
 
     }
     return (

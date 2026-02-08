@@ -5,7 +5,7 @@ import { StoreContext } from '../../Context/StoreContext'
 import { useNavigate } from 'react-router-dom'
 
 const Card = () => {
-  const {cartItems,food_list,getTotalAmount,url,removeFromCart} = useContext(StoreContext);
+  const {cartItems,food_list,getTotalAmount,url,removeFromCart,doneAudio,submitAudio,wonAudio,addAudio,timeAudio} = useContext(StoreContext);
   const navigate = useNavigate();
   return (
     
@@ -58,7 +58,7 @@ const Card = () => {
           <p>Total</p>
           <p>₹{getTotalAmount()===0?0:getTotalAmount()+5}</p>
         </div>
-        <button onClick={()=>navigate('/order')}> CHECK OUT</button>
+        <button onClick={()=>navigate('/order')||wonAudio.play()}> CHECK OUT</button>
         </div>
         </div>
         

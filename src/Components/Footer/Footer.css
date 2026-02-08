@@ -1,146 +1,145 @@
+/* Footer.css */
 
-.footer{
-    background-color: slategray;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px rgb(52, 193, 54);
-}
-.footer-content{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 80px;
-}
-.social-icon img{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 50px;
+.footer {
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
 }
 
-.bike{
-    width: 140px;
-    height: 140px;
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
 }
-.left,.center,.right{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    color: antiquewhite;
-    margin-left: 20px;
 
-    
+/* 🔹 Left */
+.footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.left li,.center li,.right li{
-    list-style: none;
-    margin-bottom: 10px;
-    color: wheat;
-    cursor: pointer;
-    
+
+.footer .bike {
+  width: 140px;
 }
-.center,.right{
-    margin-top: 40px;
-    cursor: pointer;
+
+.footer .left p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #fff;
 }
-.center h2,.right h2{
-    margin-left: -30px;
-    margin-bottom: 20px;
-    gap: 20px;
-    color: white;
+
+/* 🔗 Social icons */
+.social-icon {
+  display: flex;
+  gap: 12px;
 }
-.left{
-    gap: 20px;
+
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.center{
-    gap: 10px;
+
+.social-icon img:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: #ffe0b2;
 }
- hr{
-    margin: 20px 0px;
-    height: 2px;
-    background-color: wheat;
-    width: 70%;
-    margin-left: 160px;
-   
+
+/* 🔸 Center & Right */
+.footer .center,
+.footer .right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.copy{
-    display: flex;
+
+.footer h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer ul li:hover {
+  color: #000;
+  transform: translateX(5px);
+}
+
+/* ➖ Line */
+.footer hr {
+  margin: 30px auto 15px;
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.5);
+  width: 100%;
+}
+
+/* © Copy */
+.copy {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer .left,
+  .footer .center,
+  .footer .right {
+    align-items: center;
+  }
+
+  .social-icon {
     justify-content: center;
-    color: wheat;
-    font-size: 16px;
-    font-weight: 500;
-    height: 8vh;
-    
+  }
 
-}
-@media (max-width:375px){
-    .footer{
-    background-color: slategray;
-    margin: 10px auto;
-    width: 90%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px rgb(52, 193, 54);
-   
-}
-
-.social-icon img{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    border-radius: 50px;
-}
-
-.bike{
+  .footer .bike {
     width: 120px;
-    height: 120px;
+  }
 }
 
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    
-}
- hr{
-    margin: 20px 0px;
-    height: 1px;
-    background-color: black;
-    width: 80%;
-    margin-left: 35px;
-   
-}
-.copy{
-    display: flex;
-    justify-content: center;
-    color: wheat;
-    font-size: 12px;
-    font-weight: 500;
-    height: 6vh;
-    
-}
-.left,.center,.right{
-    color: antiquewhite;
-    margin-left: 20px;
-    margin-top: -20px;
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px 15px;
+  }
 
-    
-}
-.left li,.center li,.right li{
-    list-style: none;
-    color: wheat;
-    cursor: pointer;
-    
-}
-.center,.right{
-    cursor: pointer;
-    
-   
-}
-.center h2,.right h2{
-    margin-left: 30px;
-    color: white;
-    font-size: 20px;
-    margin-top: -40px;
-    margin-left: -10px;
-    
-}
+  .footer h2 {
+    font-size: 1rem;
+  }
 
+  .footer ul li,
+  .footer .left p,
+  .copy {
+    font-size: 0.8rem;
+  }
+
+  .social-icon img {
+    width: 28px;
+    height: 28px;
+  }
 }

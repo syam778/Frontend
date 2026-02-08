@@ -40,7 +40,7 @@
 
 }
     @media (max-width:375px){
-        .appdownload-platfrom{
+ .appdownload-platfrom{
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -69,8 +69,8 @@
     border-radius: 39px;
     border: 1px solid blue;
     box-shadow: 0px 0px 10px blue;
-    width: 115px;
-    height: 50px;
+    width: 80px;
+    height: min-content;
     cursor: pointer;
 
 }
@@ -78,8 +78,8 @@
     border-radius: 45px;
     border: 1px solid palevioletred;
     box-shadow: 0px 0px 10px palevioletred;
-    width: 100px;
-    height: 50px;
+    width: 65px;
+    height: min-content;
 
 }
 

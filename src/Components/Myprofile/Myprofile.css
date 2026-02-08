@@ -1,0 +1,212 @@
+/* Main container */
+.my-orders {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.my-orders h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffeb3b;
+}
+
+/* Profile Image */
+.profile-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-img-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffeb3b;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.upload-btn {
+  font-size: 13px;
+  font-weight: 600;
+  color: #764ba2;
+  background: #ffeb3b;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #fff;
+  color: #667eea;
+}
+
+.upload-btn input {
+  display: none;
+}
+
+/* Email input section */
+.email-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.email-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.email-box input:focus {
+  box-shadow: 0 0 0 2px #ffeb3b;
+}
+
+.email-box button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff512f, #f09819);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.email-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Error */
+.error {
+  color: #ffeb3b;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* User card */
+.order-card {
+  background: #fff;
+  color: #333;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.order-card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.order-card b {
+  color: #667eea;
+}
+.my-orders {
+  overflow: visible;
+}
+/* Force show Customer Support */
+.customer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 12px;
+  text-align: center;
+
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border: 2px solid red;   /* debug border */
+}
+
+.customer p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.customer p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.customer b {
+  margin: 0 6px;
+  color: #3f51b5;
+}
+
+.customer button {
+  margin-top: 12px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 20px;
+  background: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.my-orders {
+  overflow: visible !important;
+}
+
+
+
+
+/* Ensure parent doesn't hide it */
+
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .email-box {
+    flex-direction: column;
+  }
+
+  .email-box button {
+    width: 100%;
+  }
+
+  .my-orders {
+    margin: 20px;
+    padding: 20px;
+  }
+}

@@ -1,90 +1,173 @@
-
-.myorders h2{
-    font-size: 25px;
-    font-weight: 600;
-    color: tomato;
-    display: flex;
-    justify-content: center;margin-bottom: 20px;
-}
-.my-order .coin{
-    display: grid;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 30px;
-}
-.my-order{
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr ;
-    box-shadow: 0px 0px 5px blue;
-    align-items: center;
-    gap: 30px;
-    font-size: 18px;
-    padding: 10px 20px;
-    color: brown;
-    border: 1.7px solid gray;
-    border-radius: 16px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-}
-.my-order img{
-    width:100px;
-    height: 100px;
-}
-.my-order button{
-    padding: 5px 24px;
-    border: 1.5px solid blue;
-    box-shadow: 0px 0px 6px black;
-    border-radius: 16px ;
-    background-color: green;
-    color: wheat;
-    cursor: pointer;
-    transition: all 1s ease-out;
-    transform: translateY(25deg);
-    font-size: 12px;
-}
-.my-order button:hover{
-    background-color: wheat;
-    color: black;
-    padding: 8px 16px;
-    border: 1.5px solid gold;
-    border-radius: 8px ; 
-    font-size: 10px;
-    
-
+/* Page */
+.myorders {
+  min-height: 100vh;
+  padding: 30px 15px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+  font-family: "Poppins", sans-serif;
 }
 
-.my-order p:nth-child(1){
-    font-size: 15px;
-    font-weight: 500;
-    color: gray;
-    gap: 6px;
-
-}
-.my-order p:nth-child(2){
-    font-size: 10px;
-    font-weight: 500;
-    color: gray;
-    gap: 6px;
-    
-}
-.my-order p:nth-child(3){
-    font-size: 15px;
-    font-weight: 500;
-    color: blue;
-    gap: 6px;
-    
-}
-.my-order p span{
-    color: green;
-}
-.my-order p b{
-    color: tomato;
-}
-.status{
-    margin-left: 30px;
+.myorders h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 
+/* Grid */
+.coin {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+}
 
+/* Card */
+.my-order {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+  animation: fadeUp 0.5s ease;
+  position: relative;
+}
 
+.my-order:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
 
+/* Bucket Image */
+.my-order img {
+  width: 55px;
+  margin-bottom: 10px;
+}
+
+/* Item name */
+.name-quantity {
+  font-weight: 600;
+  color: #444;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Price */
+.my-order > p:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff512f;
+  margin: 6px 0 10px;
+}
+
+/* Store data */
+.store-data {
+  display: block;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-size: 13.5px;
+  color: #444;
+}
+
+.store-data p {
+  margin: 4px 0;
+}
+
+/* Map links */
+.my-order a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #6a11cb;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 6px 8px 6px 0;
+  transition: 0.2s;
+}
+
+.my-order a:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+.marker {
+  width: 18px;
+}
+
+/* Items count */
+#item {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* Status */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.status span {
+  color: #2ecc71;
+  font-size: 18px;
+}
+
+.status b {
+  color: #2c3e50;
+}
+
+/* Track button */
+.my-order button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 8px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.my-order button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(24, 90, 157, 0.5);
+}
+
+/* Remove button */
+.remove {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b) !important;
+  margin-top: 8px;
+}
+
+.remove:hover {
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6) !important;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .myorders h2 {
+    font-size: 26px;
+  }
+
+  .my-order {
+    padding: 18px 15px;
+  }
+}

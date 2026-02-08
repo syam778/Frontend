@@ -1,0 +1,214 @@
+/* Container */
+.my-orders {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.my-orders h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Email Box */
+.email-box {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 10px;
+  background: #ffffff20;
+  padding: 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.email-box input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.email-box button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.email-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Error */
+.error {
+  text-align: center;
+  color: #ffdddd;
+  background: #ff4d4f;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+/* Order Card */
+.order-card {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffffff;
+  color: #333;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+.order-card h3 {
+  color: #764ba2;
+  margin-bottom: 15px;
+  border-bottom: 2px dashed #ddd;
+  padding-bottom: 8px;
+}
+
+/* User Info */
+.user-info {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.user-info p {
+  margin: 6px 0;
+  font-size: 14.5px;
+}
+
+.user-info b {
+  color: #667eea;
+}
+
+/* Items */
+.order-items {
+  margin-top: 15px;
+}
+
+.order-items h4 {
+  color: #dd2476;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f7ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-left: 5px solid #667eea;
+}
+
+/* Total */
+.total {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #ff512f;
+  font-weight: 700;
+}
+/* Order Card */
+.order-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Status line */
+.order-status {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+/* Delivered status */
+.status-delivered {
+  color: #2e7d32; /* green */
+  font-weight: bold;
+  background: #e8f5e9;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+/* Pending / Assigned status */
+.status-pending {
+  color: #ef6c00; /* orange */
+  font-weight: bold;
+  background: #fff3e0;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+/* Time line */
+.order-time {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+/* Running timer */
+.time-running {
+  color: #c62828; /* red */
+  font-weight: bold;
+}
+
+/* Stopped timer (Delivered) */
+.time-stopped {
+  color: #2e7d32; /* green */
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .email-box {
+    flex-direction: column;
+  }
+
+  .email-box button {
+    width: 100%;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
