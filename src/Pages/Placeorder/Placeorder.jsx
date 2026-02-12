@@ -312,6 +312,7 @@ const Placeorder = () => {
               placeholder={key.charAt(0).toUpperCase() + key.slice(1)}
               value={deliveryInfo[key]}
               onChange={handleChange}
+              required
             />
           ))}
 
