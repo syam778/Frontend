@@ -12,14 +12,14 @@ const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({})
 
-    //const url = "http://localhost:3000"
-    const url ="https://backend2-3-vwf9.onrender.com"
+    const url = "http://localhost:3000"
+    //const url ="https://backend2-3-vwf9.onrender.com"
 
 
 
 
     //const url = "https://back-q3wv.onrender.com"
-    //const url = "https://back-ylnd.onrender.com" 
+    //const url = "https://back-ylnd.onrender.com" //old link
     //const url = "https://backend3-nt7k.onrender.com"
     const [token, setToken] = useState("")
     const [food_list, setFoodList] = useState([])
