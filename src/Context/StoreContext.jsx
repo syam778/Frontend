@@ -11,8 +11,10 @@ export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({})
+    const url = "https://backend2-5-2t0w.onrender.com" //last
 
-    const url = "http://localhost:3000"
+
+    //const url = "http://localhost:3000"
     //const url ="https://backend2-3-vwf9.onrender.com"
 
 
