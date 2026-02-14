@@ -69,6 +69,14 @@ const onChangeHandlers = (event) =>{
                                 <img src={photo.admin} alt="" />
                                 <p>Profile</p>
                             </li>
+                            <li onClick={() => navigate("/liked")} >
+                                <img src={photo.admin} alt="" />
+                                <p>Liked Items</p>
+                            </li>
+                            <li onClick={() => navigate("/customer-service")} >
+                                <img src={photo.admin} alt="" />
+                                <p>Customer-Service</p>
+                            </li>
 
                             <hr className='more' />
 

@@ -1,4 +1,4 @@
-/* EXploremenu.css */
+/* 
 
 .explore-menu {
   width: 90%;
@@ -69,7 +69,7 @@
   border-radius: 10px;
 }
 
-/* 🌐 Mobile Responsive */
+
 @media (max-width: 600px) {
   .explore-menu {
     width: 95%;
@@ -102,4 +102,89 @@
   .explore-menu-list-item .text {
     font-size: 0.8rem;
   }
+}
+*/
+.explore-menu {
+  padding: 20px 15px;
+}
+
+.explore-menu h1 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.explore-menu-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+/* ✅ Horizontal scroll row */
+.explore-menu-list {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  
+}
+
+/* ✅ Hide scrollbar (Chrome, Edge, Safari) */
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* ✅ Hide scrollbar (Firefox) */
+.explore-menu-list {
+  scrollbar-width: none;
+}
+
+/* Each item */
+.explore-menu-list-item {
+  min-width: 85px;
+  text-align: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.2s ease;
+}
+
+.explore-menu-list-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+/* Text */
+.explore-menu-list-item .text {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ✅ Active like zomato */
+.explore-menu-list-item img.active {
+  border: 3px solid #e11d48;
+  transform: scale(1.08);
+}
+
+/* active text */
+.explore-menu-list-item img.active + .text {
+  color: #e11d48;
+}
+
+/* Divider */
+.explore-menu hr {
+  margin-top: 20px;
+  border: none;
+  height: 1px;
+  background: #e5e5e5;
 }

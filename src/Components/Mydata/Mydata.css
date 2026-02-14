@@ -1,45 +1,45 @@
-/* Container */
-.my-orders {
+.my-orderss {
   min-height: 100vh;
-  padding: 30px 20px;
+  padding: 30px 16px;
   background: linear-gradient(135deg, #667eea, #764ba2);
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
-.my-orders h2 {
+/* Heading */
+.my-orderss h2 {
   text-align: center;
   font-size: 32px;
   margin-bottom: 25px;
   letter-spacing: 1px;
 }
 
-/* Email Box */
+/* Email input box */
 .email-box {
-  max-width: 500px;
+  max-width: 520px;
   margin: 0 auto 30px;
   display: flex;
-  gap: 10px;
-  background: #ffffff20;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.15);
   padding: 12px;
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
 }
 
 .email-box input {
   flex: 1;
   padding: 12px 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   outline: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .email-box button {
   padding: 12px 20px;
   background: linear-gradient(135deg, #ff512f, #dd2476);
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -48,148 +48,185 @@
 
 .email-box button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.email-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* Error */
 .error {
   text-align: center;
-  color: #ffdddd;
+  color: #fff;
   background: #ff4d4f;
   padding: 10px;
-  border-radius: 8px;
-  max-width: 500px;
+  border-radius: 10px;
+  max-width: 520px;
   margin: 0 auto 20px;
 }
 
-/* Order Card */
-.order-card {
-  max-width: 800px;
-  margin: 20px auto;
-  background: #ffffff;
-  color: #333;
+/* Order card */
+.order-cards {
+  max-width: 850px;
+  margin: 18px auto;
+  background: #f0f1f3;
+  color: #222;
   border-radius: 18px;
-  padding: 25px;
+  padding: 22px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.4s ease;
+  transition: 0.25s ease;
 }
 
-.order-card h3 {
-  color: #764ba2;
-  margin-bottom: 15px;
-  border-bottom: 2px dashed #ddd;
-  padding-bottom: 8px;
-}
-
-/* User Info */
-.user-info {
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.user-info p {
-  margin: 6px 0;
-  font-size: 14.5px;
-}
-
-.user-info b {
-  color: #667eea;
-}
-
-/* Items */
-.order-items {
-  margin-top: 15px;
-}
-
-.order-items h4 {
-  color: #dd2476;
-  margin-bottom: 10px;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  background: #f7f7ff;
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin-bottom: 8px;
-  font-size: 14px;
-  border-left: 5px solid #667eea;
-}
-
-/* Total */
-.total {
-  text-align: right;
-  margin-top: 15px;
-  font-size: 20px;
-  color: #ff512f;
-  font-weight: 700;
-}
-/* Order Card */
-.order-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 16px;
-  margin: 16px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
-}
-
-.order-card:hover {
+.order-cards:hover {
   transform: translateY(-2px);
 }
 
-/* Status line */
-.order-status {
-  font-size: 15px;
-  margin: 6px 0;
+/* Top row */
+.order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
-/* Delivered status */
-.status-delivered {
-  color: #2e7d32; /* green */
-  font-weight: bold;
-  background: #e8f5e9;
-  padding: 3px 8px;
-  border-radius: 6px;
+.order-top h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #764ba2;
+}
+
+.small {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.gray {
+  color: gray;
+}
+
+/* Status pill */
+.status-pill {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
-/* Pending / Assigned status */
-.status-pending {
-  color: #ef6c00; /* orange */
-  font-weight: bold;
-  background: #fff3e0;
-  padding: 3px 8px;
-  border-radius: 6px;
-  text-transform: capitalize;
+/* status colors */
+.status-pill.pending {
+  background: #eca7a7;
+  color: #cc0000;
 }
 
-/* Time line */
-.order-time {
+.status-pill.assigned {
+  background: #ecd68e;
+  color: #b8860b;
+}
+
+.status-pill.pickup {
+  background: #e6f0ff;
+  color: #0047b3;
+}
+
+.status-pill.out_for_delivery {
+  background: #b3f7d0;
+  color: #008040;
+}
+
+.status-pill.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* Timer */
+.timer {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #444;
+}
+
+/* Info boxes */
+.box {
+  background: #edacac;
+  padding: 14px;
+  border-radius: 14px;
+  margin-top: 14px;
+  border: 1px solid #eee;
+}
+
+.box h4 {
+  margin: 0 0 10px 0;
   font-size: 15px;
-  margin: 6px 0;
+  color: #dd2476;
 }
 
-/* Running timer */
-.time-running {
-  color: #c62828; /* red */
-  font-weight: bold;
+/* Items */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #d89b9b;
 }
 
-/* Stopped timer (Delivered) */
-.time-stopped {
-  color: #2e7d32; /* green */
-  font-weight: bold;
+.item-row:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 700;
+  margin: 0;
+}
+
+.item-total {
+  font-weight: 700;
+}
+
+/* Total */
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 2px solid #eee;
+  font-size: 18px;
+}
+.call-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #59afe0;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.total-amt {
+  color: #ff512f;
+}
+
+/* Delivered msg */
+.delivered-msg {
+  margin-top: 14px;
+  font-weight: 700;
+  color: #2e7d32;
+  text-align: center;
+  background: #96e89d;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 /* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -197,17 +234,38 @@
   }
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 600px) {
+  .my-orderss h2 {
+    font-size: 26px;
+  }
+
   .email-box {
     flex-direction: column;
+  }
+
+  .email-box input {
+    width: 100%;
   }
 
   .email-box button {
     width: 100%;
   }
 
-  .item {
+  .order-cards {
+    padding: 16px;
+  }
+
+  .order-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status-pill {
+    align-self: flex-start;
+  }
+
+  .item-row {
     flex-direction: column;
     gap: 5px;
   }

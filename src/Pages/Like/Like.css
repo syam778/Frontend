@@ -1,0 +1,297 @@
+.liked-page {
+    padding: 20px;
+    background: #f2f2f2;
+    min-height: 100vh;
+}
+
+.liked-page h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.empty {
+    font-size: 16px;
+    color: gray;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ✅ Grid like zomato */
+.liked-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+/* ✅ Card */
+.liked-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
+    padding-bottom: 12px;
+}
+
+.liked-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ✅ Image (FIXED) */
+.liked-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+/* ✅ Title */
+.liked-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 12px 12px 5px;
+    color: #111;
+}
+
+/* Category + price */
+.liked-card p {
+    margin: 4px 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 16px;
+    color: #000;
+    margin-top: 6px;
+}
+
+/* ✅ Store box */
+.stor {
+    display: block;
+    margin: 10px 12px;
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.city,
+.street,
+.brand,
+.phone {
+    font-size: 13px;
+    margin: 5px 0;
+    color: #222;
+}
+
+/* ✅ Call button */
+.call-btnn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #0ea94b;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+}
+
+.call-btnn:hover {
+    opacity: 0.9;
+}
+
+/* ✅ Map */
+.map-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #e11d48;
+    margin: 10px 12px 0px;
+}
+
+.marker1 {
+    width: 20px;
+    height: 20px;
+}
+
+/* ❌ Remove Like */
+.remove-like {
+    width: calc(100% - 24px);
+    margin: 12px 12px 0px;
+    padding: 10px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.remove-like:hover {
+    opacity: 0.9;
+}
+
+/* ✅ Add icon (when item not in cart) */
+.add-icon {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease;
+    z-index: 10;
+}
+
+.add-icon:hover {
+    transform: scale(1.08);
+}
+
+/* ✅ When item in cart ( +  count  - ) */
+.adds {
+
+    bottom: 12px;
+    right: 12px;
+    background: white;
+    border-radius: 14px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.adds img {
+    width: 50px;
+    height: 50px;
+}
+
+.add-icons {
+    width: 50px;
+    height: 50px;
+    padding: 5px auto;
+    background-color: aqua;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* count */
+.add p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #111;
+}
+
+/* red and green buttons */
+
+.greens {
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+    padding: 5px auto;
+    background-color: rgb(72, 226, 16);
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+.reds {
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+    padding: 5px auto;
+    background-color: rgb(226, 16, 83);
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+
+.red:hover,
+.green:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ RESPONSIVE FOR 600px */
+@media (max-width: 600px) {
+    .liked-page {
+        padding: 12px;
+    }
+
+    .liked-page h2 {
+        font-size: 20px;
+    }
+
+    .liked-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .liked-img {
+        height: 170px;
+    }
+}
+
+/* ✅ RESPONSIVE FOR 360px */
+@media (max-width: 360px) {
+    .liked-page h2 {
+        font-size: 18px;
+    }
+
+    .liked-card h3 {
+        font-size: 16px;
+    }
+
+    .liked-card p {
+        font-size: 13px;
+    }
+
+    .liked-img {
+        height: 150px;
+    }
+
+    .call-btnn {
+        width: 100%;
+    }
+
+    .remove-like {
+        font-size: 14px;
+        padding: 9px;
+    }
+    .add-icons{
+        width: 30px;
+        height: 30px;
+    }
+    .greens{
+        width: 30px;
+        height: 30px;
+
+    }
+    .reds{
+        width: 30px;
+        height: 30px;
+
+    }
+    .adds img{
+        width: 30px;
+        height: 30px;
+
+    }
+}

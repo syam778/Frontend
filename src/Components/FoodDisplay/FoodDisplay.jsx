@@ -36,34 +36,3 @@ const FoodDisplay = ({category}) => {
 }
 
 export default FoodDisplay
-/*
-.food-display h2{
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 15px;
-
-}
-.food-display-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
-    margin-top: 30px;
-    gap: 30px;
-    row-gap: 0px;
-}
-@media (max-width:375px){
-    .food-display h2{
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 5px;
-
-}
-.food-display-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    gap: 10px;
-    
-}
-
-}
-*/

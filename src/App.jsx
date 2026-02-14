@@ -11,6 +11,8 @@ import Verify from './Pages/Verify/Verify'
 import MyOrder from './Pages/MyOrder/MyOrder'
 import Mydata from './Components/Mydata/Mydata'
 import Myprofile from './Components/Myprofile/Myprofile'
+import Like from './Pages/Like/Like'
+import CustomerService from './Pages/CustomerService/CustomerService'
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false)
@@ -28,7 +30,10 @@ const App = () => {
           <Route path='/verify' element={<Verify />} />
           <Route path='/myorders' element={<MyOrder />} />
           <Route path='/my-order' element={<Mydata  />} />
-          <Route path='/my-data' element={<Myprofile  />} />          
+          <Route path='/my-data' element={<Myprofile  />} />
+          <Route path="/liked" element={<Like />} />  
+          <Route path="/customer-service" element={<CustomerService />} />
+        
         </Routes>
       </div>
       <Footer />

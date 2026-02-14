@@ -1,0 +1,91 @@
+.cs-page {
+  padding: 20px;
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+.cs-page h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.cs-sub {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* Grid like zomato */
+.cs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.cs-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.cs-card:hover {
+  transform: translateY(-4px);
+}
+
+.cs-card h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.cs-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.cs-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  background: #e11d48;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.cs-btn:hover {
+  opacity: 0.9;
+}
+
+/* Extra colors */
+.cs-btn.green {
+  background: #16a34a;
+}
+
+.cs-btn.blue {
+  background: #2563eb;
+}
+
+.cs-btn.pink {
+  background: #db2777;
+}
+.cs-btn.yellow{
+    background-color: sandybrown;
+
+}
+.cs-btn.red{
+    background-color: black;
+}

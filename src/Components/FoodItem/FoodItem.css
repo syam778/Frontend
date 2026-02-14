@@ -12,6 +12,7 @@
   
 }
 
+
 .food-item:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 26px rgba(0,0,0,0.25);
@@ -23,6 +24,7 @@
   width: 100%;
   height: min-content;
   overflow: hidden;
+  
 }
 
 .food-image {
@@ -121,6 +123,50 @@
   font-size: 0.8rem;
   color: #4caf50;
 }
+
+
+
+.like {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  background: rgb(193, 209, 249);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  z-index: 10;
+  border: 1px solid gray;
+}
+
+.like img {
+  width: 20px;
+  height: 20px;
+}
+
+.like:hover {
+  transform: scale(1.08);
+}
+
+.like.liked {
+  background: #cd0606;
+  animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 /* 📱 Mobile screens */
 @media (max-width: 600px) {
