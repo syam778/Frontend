@@ -78,7 +78,7 @@ const FoodItem = ({ rating_image, name, price, image, description, id, maps }) =
   return (
     <div className="food-item" id="food-item">
       <div className="food-item-img-container">
-        {/* ✅ Food Image */}
+        {/* ✅ Food Image 
         <img
           className="food-image"
           src={`${url}/images/${encodeURIComponent(image)}`}
@@ -86,7 +86,8 @@ const FoodItem = ({ rating_image, name, price, image, description, id, maps }) =
           onError={(e) => {
             e.target.src = "https://via.placeholder.com/150";
           }}
-        />
+        />*/}
+        <img src={image} alt={name} className="food-image"/>
 
         {/* ❤️ Like button (Zomato style) */}
         <div

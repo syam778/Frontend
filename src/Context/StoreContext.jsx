@@ -145,10 +145,10 @@ const StoreContextProvider = (props) => {
   // ❤️ Like Items (Zomato Wishlist)
   const [likeItems, setLikeItems] = useState([]);
 
-  const url = "https://backend2-5-2t0w.onrender.com" //last
-  //const url = "http://localhost:3000";
+  //const url = "https://backend2-5-2t0w.onrender.com" //last
+  const url = "http://localhost:3000";
   
-  //const url ="https://backend2-3-vwf9.onrender.com"
+  
 
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
