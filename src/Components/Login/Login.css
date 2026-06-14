@@ -74,6 +74,9 @@
 
 
 }
+
+
+
 @media (max-width:375px){
     .login{
     position: absolute;
@@ -116,7 +119,7 @@
     box-shadow: 0px 0px 10px blue;   
 }
 .login-input{
-    margin-top: -20px;
+    margin-top: 30px;
 }
 .titel img{
     width: 40px;
@@ -152,3 +155,4 @@
 }
 
 }
+
